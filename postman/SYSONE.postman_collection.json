@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "264ffeaa-46c2-49d9-8bb6-22b3f908ffa8",
+		"name": "SYSONE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listCart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/list/cars",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"list",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail car by {id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/detail/car/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"detail",
+						"car",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listInvoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/list/invoices",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"list",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/stats",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateBudget",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCar\": 1,\r\n    \"optionals\": [\r\n      1,2,3,4,5\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/calculateBudget",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"calculateBudget"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reserveVehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCar\": 3,\r\n    \"optionals\": [\r\n       1,2\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/reserveVehicle",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"reserveVehicle"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
